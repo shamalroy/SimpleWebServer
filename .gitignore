@@ -1,5 +1,7 @@
 .idea/
 out/
+target/*
+!target/simplewebserver-1.0-SNAPSHOT.jar
 *.iml
 *.class
 *.log
