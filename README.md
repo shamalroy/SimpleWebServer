@@ -31,10 +31,10 @@ Currently implemented filters:
 * HTTP Status code for the filesystem contents using custom Exception handing. Implemented codes are 200, 404, and 500.
 
 ## How to run the server:
-An executable jar is included in the build_jar directory of this project. Update the server-config.properties file with the correct configuration values. The doc-root1 folder contains some sample html and css files as well. Use the following terminal commands to run the jar.
+Build an executable jar file using maven package command (or use use the existing one in this github repo). Update the server-config.properties file with the correct configuration values. The doc-root1 folder contains some sample html and css files as well. Use the following terminal commands to run the jar.
 ```
-cd build_jar/
-java -jar SimpleWebServer.jar
+mvn clean package
+java -jar target/simplewebserver-1.0-SNAPSHOT.jar
 ```
 After running the server you will see the welcome message with the server address to access the sample home page. 
 
