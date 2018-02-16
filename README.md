@@ -4,7 +4,7 @@ A multi-threaded web server with thread-pooling implemented in Java.
 
 ## Implemented features:
 
-* Proper HTTP/1.1 keep-alive behavior is implemented based on the http-client's capabilities exposed through its request headers. The keep-alive behavior is implemented through Pre and Post Filters. 
+* HTTP/1.1 keep-alive behavior is implemented based on the http-client's capabilities exposed through its request headers. The keep-alive behavior is implemented through Pre and Post Filters. 
 
   * If a keep-alive header is identified in the KeepAlivePreFilter the keepAlive flag is set on the client socket and keep the inputStream open for subsequent requests until a request with no keep-alive header is received. If a request with no keep-alive header received the server stops reading from inputSteam and close the client socket after the request is served. A Connection:Keep-Alive response header is also added to the keep-alive requests using KeepAlivePostFilter.
   
